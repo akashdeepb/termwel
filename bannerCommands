@@ -1,0 +1,12 @@
+banner
+toilet
+figlet -f bigmono9
+figlet -f mono9
+figlet -f mono12
+figlet
+figlet -f slant
+figlet -c
+figlet -l
+figlet -r
+figlet -t
+figlet -k
