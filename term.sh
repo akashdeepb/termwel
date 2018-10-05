@@ -2,9 +2,9 @@
 CommandLines=$(cat bannerCommands | wc -l)
 BannerNumber=$(((RANDOM%$CommandLines)+1))
 command=$(sed $BannerNumber'!d' bannerCommands)
-if [ $BannerNumber -lt 6 ];then
+if [ $BannerNumber -lt 7 ];then
 	textFile=bigText
-elif [ $BannerNumber -gt 5 ];then
+elif [ $BannerNumber -gt 6 ];then
 	textFile=smallText
 fi
 colorLines=$(cat textCol | wc -l)
