@@ -1,5 +1,6 @@
 banner
 toilet
+toilet -F border
 figlet -f bigmono9
 figlet -f mono9
 figlet -f mono12
