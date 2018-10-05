@@ -1,3 +1,4 @@
+#!/bin/bash
 CommandLines=$(cat bannerCommands | wc -l)
 BannerNumber=$(((RANDOM%$CommandLines)+1))
 command=$(sed $BannerNumber'!d' bannerCommands)
