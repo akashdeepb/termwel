@@ -4,9 +4,14 @@ echo " An Open Source Project to Welcome users to Terminal "
 echo -e "\033[1;36m github : https://github.com/akashdeepb/termwel \033[1;m "
 chmod +x term.sh
 wd=$(pwd)
-echo -e "\n # This is TERMINAL WELCOME ### \n" >>~/.bashrc
-echo -n "cd " >>~/.bashrc && echo $wd >> ~/.bashrc && echo "./term.sh" >>~/.bashrc && echo "cd" >>~/.bashrc
-echo -e "\n # END OF TERMINAL WELCOME ### \n" >>~/.bashrc
+grep "./term.sh" ~/.bashrc
+if [ $? -eq 0 ];then
+    echo -e "\t\t --------------------------"
+    echo -e "\t\t  Termwel already exists. \n\t  To reinstall run remove.sh then run termwel.sh"
+    echo -e "\t\t --------------------------"
+else
+    echo -n "cd " >>~/.bashrc && echo $wd >> ~/.bashrc && echo "./term.sh" >>~/.bashrc && echo "cd" >>~/.bashrc
+fi
 echo -e "\n\n\t --  INSTALLING REQUIREMENTS -- "
 sudo apt-get install figlet
 sudo apt-get install toilet
