@@ -10,9 +10,8 @@ else
     exit
 fi
 read -p "Do you want to remove all files of Termwel?(y/n) : " ans
-if [ $and == 'y' ];then
-    #rm -rf *
-    exit
+if [ $ans == 'y' ];then
+    rm -rf *
 else 
     echo "Continuing ... "
-    exit
+fi
