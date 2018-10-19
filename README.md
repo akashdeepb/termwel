@@ -23,8 +23,8 @@ chmod +x termwel.sh
 ```
 
 #### How to Remove
-Step 1 : Open `~/.bashrc`
 
-Step 2 : Find ` # This is Terminal Welcome`  
-
-Step 3 : Delete till ` # End of Terminal Welcome `
+Run 
+```
+./remove.sh
+```
