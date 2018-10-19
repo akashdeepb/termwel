@@ -4,9 +4,7 @@ echo " An Open Source Project to Welcome users to Terminal "
 echo -e "\033[1;36m github : https://github.com/akashdeepb/termwel \033[1;m "
 read -p "Are you sure you want to remove Termwel?(y/n) : " ans
 if [ $ans == 'y' ];then
-    sed -i '/cd termwel/d' ~/.bashrc
-    sed -i 's/\./\\\\./term.sh/d' ~/.bashrc
-    sed -i '/cd/d' ~/.bashrc
+    sed -i '/termwel/d' ~/.bashrc
 else
     echo "Cancelled by User ... ;)"
     exit

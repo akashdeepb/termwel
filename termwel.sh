@@ -10,7 +10,7 @@ if [ $? -eq 0 ];then
     echo -e "\t\t  Termwel already exists. \n\t  To reinstall run remove.sh then run termwel.sh"
     echo -e "\t\t --------------------------"
 else
-    echo -n "cd " >>~/.bashrc && echo $wd >> ~/.bashrc && echo "./term.sh" >>~/.bashrc && echo "cd" >>~/.bashrc
+    echo -n "cd " >>~/.bashrc && echo $wd >> ~/.bashrc && echo -n $wd >>~/.bashrc && echo "/term.sh" >>~/.bashrc && echo "cd" >>~/.bashrc
 fi
 echo -e "\n\n\t --  INSTALLING REQUIREMENTS -- "
 sudo apt-get install figlet
